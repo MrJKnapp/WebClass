@@ -1,0 +1,43 @@
+
+p{
+	color: blue;
+	border: 1px solid black;
+
+}
+
+#p1{
+	background-color: #a52a2a;
+	width: 300px;
+	height: 300px;
+}
+
+#p2{
+	background-color: #DEB887;
+	width: 50px;
+	height: 50px;
+}
+
+/* base styles */
+
+/* Large Devices */
+@media (min-width: 1200px) {
+	#p1 {
+		width: 80%;
+	}
+
+	#p2 { 
+		width: 150px;
+		height: 150px;
+	}
+}
+/* Medium Devices */
+@media (min-width: 992px) and (max-width: 1199px){
+	#p1{
+		width: 50%;
+	}
+
+	#p2{
+		width: 100px;
+		height: 100px;
+	}
+}

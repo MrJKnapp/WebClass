@@ -1,0 +1,70 @@
+
+div.row{
+	margin-top: 5px;
+	background-color: #96beff;
+	padding-top: 12px;
+}
+
+.jumbotron{
+	height: 450px;
+	background-image: url("../images/charlieSpot.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%;
+	width: 95%;
+	margin: 0 auto;
+/*	position: fixed; 
+	z-index: -1;*/
+}
+
+#jumbo{
+	color: white;
+	font-size: 3em;
+	position: relative;
+	top: 300px;*/
+	left: 100px;
+}
+
+.nav{
+	display: flex;
+}
+
+#box1{
+
+}
+
+#box2{
+	
+}
+
+#box3{
+	
+}
+
+#box4{
+	
+}
+
+#box5{
+	
+}
+
+#box6{
+	
+}
+
+#box7{
+	
+}
+
+#box8{
+	
+}
+
+#box9{
+	
+}
+
+body {
+	padding-top: 70px; /*Give nav-bar some space*/
+}

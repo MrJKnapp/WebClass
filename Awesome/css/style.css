@@ -1,0 +1,28 @@
+div.box{
+	width:100px;
+	height:100px;
+	background-color:#00ff04;
+	border: 1px solid #00ff00;
+	opacity: 0.5;
+}
+
+div.bigPurple{
+	background-color:purple;
+	width:600px;
+	height:250px;
+}
+
+div.a{
+}
+
+div.b{
+	position: relative;
+	left: 75px;
+	top: -25px;
+}
+
+div.c{
+	position: relative;
+	left: 150px;
+	top: -50px;
+}
