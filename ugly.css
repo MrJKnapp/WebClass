@@ -1,0 +1,22 @@
+body{
+	background-color: black;
+}
+
+h1 {
+	background-color: white;
+	font-size:600%;
+	font-family: 'Creepster', cursive;
+}
+
+p {
+	background-color: orange;
+	color: blue;
+	font-family: 'Love Ya Like A Sister', cursive;
+}
+
+marquee {
+	color: green;
+	font-size:500%;
+	font-family: 'Iceland', cursive;
+	marquee-speed: fast;
+}
