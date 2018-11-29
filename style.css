@@ -1,8 +1,18 @@
-#emmaPage{
+.Page{
 	height: 300px;
-	background-image: url("emma/images/EmmaYell.jpg");
 	background-repeat: no-repeat;
 	background-size: contain;
 	color: 200, 200, 200;
-	
+	margin: 20px;
+	color: grey;
+	font-weight: bold;
+	font-size: 32;	
+}
+
+#emmaPage{
+	background-image: url("emma/images/EmmaYell.jpg");
+}
+
+#knappPage{
+	background-image: url("knapp/images/Watermelons.jpg");
 }
