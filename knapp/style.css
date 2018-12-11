@@ -1,0 +1,26 @@
+* {
+	font-family: 'Roboto Slab', serif;
+}
+
+body {
+	/*background-color: #07470f;*/
+	background-color: white;
+}
+
+h1 {
+	font-family: 'Noto Serif TC', serif;
+}
+
+img{
+	display: block;
+	margin: auto;
+} 
+
+p {
+	color: #333333;
+	background-color: #f4f7ff;
+	border: 5px solid;
+	border-color: black blue green red;
+	padding: 10px;
+	margin: 15px;
+}

@@ -1,0 +1,17 @@
+h1{
+	font-family: 'Mountains of Christmas', cursive;
+	color: #10ff00;
+	text-align: center;
+	text-shadow: 10px #999999;
+	float: right;
+}
+
+img{
+	float: right;
+}
+
+body{
+	background-image: url("space.jpeg");
+	font-family: 'Press Start 2P', cursive;
+	color: #ff2100;
+}
