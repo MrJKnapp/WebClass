@@ -1,0 +1,75 @@
+* {
+	box-sizing: border-box;
+}
+
+#header{
+	width: 100%;
+	height: 150px;
+	position: fixed;
+	top: 0px;
+}
+
+.blue{
+	background-color: blue;
+}
+
+.red {
+	background-color: red;
+}
+
+.grey {
+	background-color: #555555;
+	width: 50px;
+	height: 50px;
+	opacity: 0.7;
+	position: relative;
+	left: 85%;
+	margin-top: 30px;
+}
+
+#mountainpic{
+	height: 70%;
+	margin: 1%;
+	float: left;
+}
+
+#header > a {
+	color: white;
+	background-color: #454545;
+	border: solid black;
+	border-radius: 10px;
+	height: 70px;
+	margin: 35px 10px 35px 10px;
+	padding: 20px;
+	float: left;
+}
+
+#header > a:hover {
+	box-shadow: 5px 5px 5px #777777;
+}
+
+#bigPicture{
+	margin-top: 200px;
+	background: #333333;
+	width: 100%;
+}
+
+#bigPicture > img{
+	width: 100%;
+}
+
+#bigPicture > p {
+
+}
+
+.columns{
+	width: 100%;
+}
+
+.columns > div {
+	width: 30%;
+	float: left;
+	margin: 5px;
+	padding: 5px;
+	height: 200px;
+}

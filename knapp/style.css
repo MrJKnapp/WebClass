@@ -5,6 +5,7 @@
 body {
 	/*background-color: #07470f;*/
 	background-color: white;
+	font-size: 16pt;
 }
 
 h1 {
@@ -20,7 +21,13 @@ p {
 	color: #333333;
 	background-color: #f4f7ff;
 	border: 5px solid;
-	border-color: black blue green red;
 	padding: 10px;
 	margin: 15px;
+}
+
+#links{
+	background-color: #A2A2A2;
+	padding: 10px;
+	padding-left: 20px;
+	font-size: 200%
 }

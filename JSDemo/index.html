@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Demo</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="container-fluid">
+	<h1>Javascript for Web Dev</h1>
+	
+	<p>The button was pressed 
+		<span id="counter">0</span> times.
+	</p>
+	<p>You are on level <span id="level">0</span></p>
+	
+	<button type="button" onclick="count()" class="btn btn-primary">Press Here
+	</button>
+
+	<button type="button" onclick="pop()" class="btn btn-danger">Do not press!
+	</button>
+
+	<button id="colorButton" type="button" onclick="color()" class="btn btn-light">Click
+	</button>
+
+	<button id="timebutton" type="button" onclick="whatPeriod()" class="btn btn-primary">Time? Period?
+	</button>
+	
+	<p>Here is the time: <span id="time"></span></p>
+	<p>Here is the current period: <span id="period"></span></p>
+
+	<div id="webDev">
+		<p>The people in the Web Dev Class:</p>
+		<p id="student"></p>
+	</div>
+
+</div>
+	<script>
+		function count(){
+			var n = Number(document.getElementById('counter').innerHTML);
+			document.getElementById('counter').innerHTML = n + 1;
+			if (n % 200 <= 0 ){
+				
+				var m = Number(document.getElementById('level').innerHTML);
+				document.getElementById('level').innerHTML = m + 1
+			}
+		}
+		function pop(){
+			window.alert("Wooooo!");
+		}
+
+		function color(){
+			document.getElementById('colorButton').style.background = "red";
+		}
+
+		function whatPeriod(){
+			var d = new Date();
+  			var n = d.getTime();
+  			var h = d.getHours();
+  			var m = d.getMinutes();
+  			var p = 0;
+  			if (h >= 8 && m >= 10 && h < 9){
+  				p = 1;
+  			}
+  			else if (h == 9 && m <= 50){
+  				p = 2;
+  			}
+  			document.getElementById("time").innerHTML = h + ":" + m;
+  			document.getElementById("period").innerHTML = p;
+		}
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script>
+	$.getJSON('https://spreadsheets.google.com/feeds/list/1tywruYE3UtkhKlS9w8aLL0wpjuXVTBYBOktzGucSRxY/od6/public/values?alt=json',
+	function (data) {
+		var d = data.feed.entry;
+		$.each(d, function () {
+			$('#webDev p:last').after('<p>' + this['gsx$first']['$t'] + ',' + this['gsx$last']['$t'] + '</p>');
+		})
+		document.getElementById('student').innerHTML = d[3]['gsx$first']['$t'] + ' ' + d[3]['gsx$last']['$t'];
+		console.log(data);
+	})
+	</script>
+</body>
+</html>
